@@ -43,7 +43,7 @@ const HeroSection = () => {
   const [shouldShow, setShouldShow] = useState(false);
   useEffect(() => setShouldShow(true), []);
   return (
-    <Paper className={styles.section}>
+    <Paper className={styles.section} id="about">
       <StaticImage
         className={styles.heroImage}
         src="https://images.unsplash.com/photo-1575278221470-d991244b659d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
