@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
   },
   overlay: {
-    backgroundColor: "rgba(0,0,0,0.6)",
+    backgroundColor: "rgba(0,0,0,0.7)",
     height: "100%",
     width: "100%",
     position: "absolute",
@@ -35,6 +35,13 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     width: "100%",
     zIndex: 1,
+  },
+  maillink: {
+    textDecoration: "none",
+    color: "white",
+    fontWeight: 500,
+    fontSize: "16px",
+    backgroundColor: "rgba(3,6,36,0.4)",
   },
 }));
 
@@ -61,16 +68,21 @@ const HeroSection = () => {
           <Zoom in={shouldShow}>
             <Grid item sm={8}>
               <Typography component="h1" variant="h3">
-                Hi, my name is Anton Drevetskyi. I'm a JavaScript developer.
+                Hello! My name is Anton Drevetskyi. I'm a JavaScript developer.
               </Typography>
               <Typography variant="h5">
-                I build websites, web application and responsive user
+                I build websites, web applications and responsive user
                 interfaces. I deliver intelligent web solutions and
-                trans-formative services.
+                transformative services.
               </Typography>
               <Box my={2}>
-                <Button href="mailto:addres@email.com" variant="outlined">
-                  Get in Touch!
+                <Button variant="outlined">
+                  <a
+                    className={styles.maillink}
+                    href="mailto:drevetskyianton@gmail.com"
+                  >
+                    Get in Touch!
+                  </a>
                 </Button>
               </Box>
             </Grid>

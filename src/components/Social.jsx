@@ -1,7 +1,7 @@
 import React from "react";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import TwitterIcon from "@material-ui/icons/Twitter";
+import FacebookIcon from "@material-ui/icons/Facebook";
 import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
 import Link from "@material-ui/core/Link";
@@ -13,7 +13,11 @@ const socialItems = [
     url: "https://www.linkedin.com/in/anton-drevetskyi-web-dev/",
     name: "linkedin",
   },
-  { icon: TwitterIcon, url: "", name: "twitter" },
+  {
+    icon: FacebookIcon,
+    url: "https://www.facebook.com/ant.drev",
+    name: "facebook",
+  },
 ];
 
 const Social = ({ direction }) => {
